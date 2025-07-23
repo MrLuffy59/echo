@@ -5,9 +5,6 @@ export default function Home() {
   return (
     <main className={styles.homepage}>
       <header className={styles.header}>
-        <a href="https://www.google.com" className={styles.exitButton}>
-          Exit
-        </a>
         <h1 className={styles.h1}>Echo</h1>
         <h2 className={styles.h2}>
           Une écoute, une aide, un espace sûr pour toi.
