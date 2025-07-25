@@ -14,16 +14,17 @@ export default function Home() {
       <section className={styles.mainContent}>
         <div className={styles.menuAndGesture}>
           <nav className={styles.menu}>
-            <Link href="/temoignages">
+            <Link href="/temoignages" className={styles.menuLink}>
               Lire les témoignages et partager mon histoire
             </Link>
-            <Link href="/aide">Où trouver de l'aide ?</Link>
+            <Link href="/aide" className={styles.menuLink}>
+              Où trouver de l'aide ?
+            </Link>
           </nav>
 
           <section className={styles.gesture}>
             <div className={styles.gestureBox}>
-              <h3>Aide immédiate</h3>
-              <button className={styles.safetyGesture}>
+              <Link href="/immediate-help" className={styles.safetyGesture}>
                 <img
                   src="/safetygesture.png"
                   alt="Geste de sécurité"
@@ -32,7 +33,7 @@ export default function Home() {
                 <div className={styles.clickSecure}>
                   Clique ici en toute sécurité
                 </div>
-              </button>
+              </Link>
             </div>
           </section>
         </div>

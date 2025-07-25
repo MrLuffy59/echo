@@ -1,0 +1,61 @@
+.helpPage {
+  background: rgb(243, 145, 84);
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.homeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+}
+
+.title {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 8rem);
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+}
+
+.contactItem {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: purple;
+}
+
+.desc {
+  color: white;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-top: 5rem;
+  }
+  .helpPage {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
